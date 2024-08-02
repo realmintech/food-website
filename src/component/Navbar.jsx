@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 import { FaBasketShopping, FaBowlFood } from 'react-icons/fa6';
 
-function Navbar() {
+function Navbar({ setShowLogin }) {
   const [menu, setMenu] = useState('home');
   return (
     <div className="navbar">
-      <FaBowlFood />
+      <Link to="/">
+        {' '}
+        <FaBowlFood />
+      </Link>
       <ul className="navbar-menu">
         <Link
           to="/"
@@ -41,10 +44,14 @@ function Navbar() {
           <FaSearch />
         </div>
         <div className="navbar-search-icon">
-          <FaBasketShopping />
+          <Link to="/cart">
+            <FaBasketShopping />
+          </Link>
           <div className="dot"></div>
         </div>
-        <button className="sign-in-btn">Sign in</button>
+        <button className="sign-in-btn" onClick={() => setShowLogin(true)}>
+          Sign in
+        </button>
       </div>
     </div>
   );
