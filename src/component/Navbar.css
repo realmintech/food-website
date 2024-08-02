@@ -1,0 +1,105 @@
+.navbar {
+    padding: 10px 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(245, 242, 242);
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.sign-in-btn {
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    background-color: #49557e;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+svg {
+    font-size: 20px;
+    color: #49557e;
+}
+
+.sign-in-btn:hover {
+  color: #49557e;
+  background-color: white;
+  transition: ease-out 1s;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar-search-icon {
+    position: relative;
+    padding-top: 15px;
+}
+
+.search-icon {
+    padding-top: 15px;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: 0;
+    right: -8px;
+}
+/* 
+@media (max-width: 1050px) {
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+} */
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+}
