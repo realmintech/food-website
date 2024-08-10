@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import { FaSearch } from 'react-icons/fa';
+// import { FaSearch } from 'react-icons/fa';
 import { FaBasketShopping, FaBowlFood } from 'react-icons/fa6';
 import { StoreContext } from '../context/StoreContext';
 
@@ -42,9 +42,9 @@ function Navbar({ setShowLogin }) {
         </li>
       </ul>
       <div className="navbar-right">
-        <div className="search-icon">
+        {/* <div className="search-icon">
           <FaSearch />
-        </div>
+        </div> */}
         <div className="navbar-search-icon">
           <Link to="/cart">
             <FaBasketShopping />

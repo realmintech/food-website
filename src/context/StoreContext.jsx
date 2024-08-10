@@ -2,15 +2,20 @@ import { createContext, useState, useEffect } from 'react';
 import { food_list } from '../assest/Food';
 
 export const StoreContext = createContext(null);
+
 const StoreContextProvider = (props) => {
   const [cartItem, setCartItem] = useState(() => {
     const savedCart = localStorage.getItem('cartItem');
     return savedCart ? JSON.parse(savedCart) : {};
   });
 
+
+
   useEffect(() => {
     localStorage.setItem('cartItem', JSON.stringify(cartItem));
   }, [cartItem]);
+
+
 
   const addToCart = (itemId) => {
     setCartItem((prev) => {

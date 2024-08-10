@@ -11,7 +11,6 @@ const AppDownload = () => {
           <img className='app-img' id='img1' src={google} alt="" />
           <img className='app-img' id='img2' src={apple} alt="" />
         </div>
-
     </div>
   )
 }
