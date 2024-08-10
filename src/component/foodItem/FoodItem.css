@@ -1,12 +1,13 @@
 .food-item {
-    /* width: 100%; */
-     width: 300px;
-    /* margin: 0 20px; */
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px #00000015;
-    transition: 0.3s;
-    animation: fadeIn 1s;
-    border: 0.6px solid #ccc;
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    gap: 13px; 
+}
+
+.food-item-img-container {
+   border-radius: 15px;
+   box-shadow: 0px 0px 10px #00000015;
+   border: 0.6px solid #ccc;
 }
 
 .food-item-image {
