@@ -10,12 +10,9 @@ const StoreContextProvider = (props) => {
   });
 
 
-
   useEffect(() => {
     localStorage.setItem('cartItem', JSON.stringify(cartItem));
   }, [cartItem]);
-
-
 
   const addToCart = (itemId) => {
     setCartItem((prev) => {

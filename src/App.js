@@ -18,6 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Cart' element={<Cart />} />
+        <Route path='/product' element={<Product />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
         <Route path='/PlaceOrder' element={<PlaceOrder />} />
       </Routes>
       <Footer />
