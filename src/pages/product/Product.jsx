@@ -29,6 +29,8 @@ const Product = () => {
       <div className="other-details">
         <h1>{product?.name}</h1>
         <p>Price: ${product?.price}</p>
+        <h3>Description</h3>
+        <p>{product?.how}</p>
         {cartItem[id] && (
           <div className="food-item-counter">
             <FaMinus onClick={() => removeFromCart(id)} />
@@ -36,8 +38,6 @@ const Product = () => {
             <FaPlus onClick={() => addToCart(id)} />
           </div>
         )}
-            <h3>Description</h3>
-            <p>{product?.how}</p>
       </div>
     </div>
   );
