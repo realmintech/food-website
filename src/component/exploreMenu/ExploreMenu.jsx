@@ -11,7 +11,7 @@ import food8 from '../../assest/food8.jpg';
 
 const ExploreMenu = ({category, setCategory}) => {
   const menuFood = [
-    { image: food1, name: 'Salad', price: 1500 },
+    { image: food1, name: 'Salad', price: 1500, category: 'Local food' },
     { image: food2, name: 'Hamburger', price: 4000 },
     { image: food3, name: 'Semo and egusi', price: 2500 },
     { image: food4, name: 'Jollof rice and chicken', price: 3800 },

@@ -2,12 +2,13 @@ import React, { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
 import './Product.css';
-import  {FaMinus, FaPlus } from 'react-icons/fa';
+import { FaMinus, FaPlus } from 'react-icons/fa';
 
 const Product = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  const { food_list, cartItem, removeFromCart,addToCart } = useContext(StoreContext);
+  const { food_list, cartItem, removeFromCart, addToCart } =
+    useContext(StoreContext);
 
   useEffect(() => {
     const selectedProduct = food_list.find((item) => item._id === Number(id));
@@ -27,7 +28,6 @@ const Product = () => {
       </div>
       <div className="other-details">
         <h1>{product?.name}</h1>
-        <p>{product?.description}</p>
         <p>Price: ${product?.price}</p>
         {cartItem[id] && (
           <div className="food-item-counter">
@@ -36,6 +36,8 @@ const Product = () => {
             <FaPlus onClick={() => addToCart(id)} />
           </div>
         )}
+            <h3>Description</h3>
+            <p>{product?.how}</p>
       </div>
     </div>
   );
