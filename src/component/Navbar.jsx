@@ -1,12 +1,11 @@
 import React, { useContext, useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-// import { FaSearch } from 'react-icons/fa';
 import { FaBasketShopping, FaBowlFood } from 'react-icons/fa6';
 import { StoreContext } from '../context/StoreContext';
 
 function Navbar({ setShowLogin }) {
-  const [menu, setMenu] = useState('home');
+  const [menu, setMenu] = useState();
   const { getTotalCartAmount } = useContext(StoreContext);
   return (
     <div className="navbar">
@@ -23,16 +22,16 @@ function Navbar({ setShowLogin }) {
           Home
         </Link>
         <li
-          onClick={() => setMenu('menu')}
-          className={menu === 'menu' ? 'active' : ''}
+          onClick={() => setMenu('products')}
+          className={menu === 'products' ? 'active' : ''}
         >
-          <a href="#explore-menu"> Menu</a>
+          <a href="/products"> Products</a>
         </li>
         <li
           onClick={() => setMenu('gallery')}
           className={menu === 'gallery' ? 'active' : ''}
         >
-          <a href="#food-display">Gallery</a>
+          <a href="#food-card">Gallery</a>
         </li>
         <li
           onClick={() => setMenu('contact-us')}
@@ -42,9 +41,6 @@ function Navbar({ setShowLogin }) {
         </li>
       </ul>
       <div className="navbar-right">
-        {/* <div className="search-icon">
-          <FaSearch />
-        </div> */}
         <div className="navbar-search-icon">
           <Link to="/cart">
             <FaBasketShopping />

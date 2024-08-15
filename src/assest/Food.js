@@ -110,7 +110,7 @@ export const food_list = [
       'Food provides essential nutrients for overall health and well-being',
     category: 'Local food',
   },
-   {
+  {
     _id: 12,
     name: 'Salad',
     image: food1,
@@ -137,8 +137,143 @@ export const food_list = [
       'Food provides essential nutrients for overall health and well-being',
     category: 'Local food',
   },
-    {
+  {
     _id: 15,
+    name: 'Ewa igonyi',
+    image: food8,
+    price: 2500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 16,
+    name: 'Salad',
+    image: food1,
+    price: 1500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Salad',
+  },
+  {
+    _id: 17,
+    name: 'Hamburger',
+    image: food2,
+    price: 4000,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Hamburger',
+  },
+  {
+    _id: 18,
+    name: 'Semo and egusi',
+    image: food3,
+    price: 2500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 19,
+    name: 'Jollof rice and chicken',
+    image: food4,
+    price: 3800,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'African food',
+  },
+  {
+    _id: 20,
+    name: 'Moimoi',
+    image: food5,
+    price: 1500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 21,
+    name: 'Efo riro',
+    image: food6,
+    price: 2000,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 22,
+    name: 'Ofada rice',
+    image: food7,
+    price: 5000,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 23,
+    name: 'Ewa igonyi',
+    image: food8,
+    price: 2500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 24,
+    name: 'Jollof rice and chicken',
+    image: food9,
+    price: 3800,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 25,
+    name: 'Semo and egusi',
+    image: food10,
+    price: 2500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 26,
+    name: 'Semo and egusi',
+    image: food11,
+    price: 2500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 27,
+    name: 'Salad',
+    image: food1,
+    price: 1500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Salad',
+  },
+  {
+    _id: 28,
+    name: 'Hamburger',
+    image: food2,
+    price: 4000,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Hamburger',
+  },
+  {
+    _id: 29,
+    name: 'Semo and egusi',
+    image: food3,
+    price: 2500,
+    description:
+      'Food provides essential nutrients for overall health and well-being',
+    category: 'Local food',
+  },
+  {
+    _id: 30,
     name: 'Ewa igonyi',
     image: food8,
     price: 2500,

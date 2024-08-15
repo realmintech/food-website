@@ -41,29 +41,17 @@
     font-weight: 500;
     margin: 10px 0px;
 }
-
-.food-item-img-container {
-    position: relative;
+.add-to-cart {
+    border-radius: 4px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    /* padding: 5px; */
+    font-size: 16px;
 }
 
-.food-item-img-container .add {
-    width: 35px;
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    color: tomato;
-}
-
-.food-item-counter {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 6px;
-    border-radius: 50px;
-    background-color: white;
+.price-n-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
 }
