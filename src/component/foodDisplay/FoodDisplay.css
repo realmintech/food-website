@@ -39,6 +39,34 @@ gap: 16px;
  margin-top: 30px;
 }
 
+#numBtn {
+  padding: 10px;
+  font-size: 10px;
+  background-color: #ccc;
+  color: tomato;
+  border: none;
+}
+
+.arrowIcon {
+  padding: 4.3px;
+  font-size: 8px;
+  background-color: tomato;
+  color: white;
+  border: none;
+}
+
+.arrowIcon svg {
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 10px;
+  font-size: 10px;
+  margin: 20px auto;
+}
 
 
 @media (max-width: 1024px) {

@@ -17,11 +17,7 @@ export const food_list = [
     image: food1,
     price: 1500,
     how: `Rinse the rice under cold water until the water runs clear, then set aside to drain.
-Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside.
-Heat the oil in a large, deep skillet or pot over medium heat.
-Add the remaining chopped onion and cook until softened.
-Once softened, add your tomato paste and cook this for roughly 5 minutes or until the tomato paste carmalises, you should see black parts on your pan this is where spme of the smoky flavour will come from.
-Into the pan add smoked paprika, all-purpose seasoning, garlic granules, onion granules and cook until aromatic around 60-90 seconds.`,
+Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside.garlic granules, onion granules and cook until aromatic around 60-90 seconds.`,
     description:
       'Food provides essential nutrients for overall health and well-being',
     category: 'Salad',
@@ -32,9 +28,7 @@ Into the pan add smoked paprika, all-purpose seasoning, garlic granules, onion g
     image: food2,
     price: 4000,
     how: `Rinse the rice under cold water until the water runs clear, then set aside to drain.
-Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside.
-Heat the oil in a large, deep skillet or pot over medium heat.
-Add the remaining chopped onion and cook until softened.`,
+Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside.`,
     description:
       'Food provides essential nutrients for overall health and well-being',
     category: 'Hamburger',
@@ -99,11 +93,7 @@ Add the remaining chopped onion and cook until softened.`,
     image: food9,
     price: 3800,
     how: `Rinse the rice under cold water until the water runs clear, then set aside to drain.
-Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside.
-Heat the oil in a large, deep skillet or pot over medium heat.
-Add the remaining chopped onion and cook until softened.
-Once softened, add your tomato paste and cook this for roughly 5 minutes or until the tomato paste carmalises, you should see black parts on your pan this is where spme of the smoky flavour will come from.
-Into the pan add smoked paprika, all-purpose seasoning, garlic granules, onion granules and cook until aromatic around 60-90 seconds.`,
+Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside around 60-90 seconds.`,
     description:
       'Food provides essential nutrients for overall health and well-being',
     category: 'Local food',
@@ -195,11 +185,7 @@ Into the pan add smoked paprika, all-purpose seasoning, garlic granules, onion g
     image: food4,
     price: 3800,
     how: `Rinse the rice under cold water until the water runs clear, then set aside to drain.
-Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside.
-Heat the oil in a large, deep skillet or pot over medium heat.
-Add the remaining chopped onion and cook until softened.
-Once softened, add your tomato paste and cook this for roughly 5 minutes or until the tomato paste carmalises, you should see black parts on your pan this is where spme of the smoky flavour will come from.
-Into the pan add smoked paprika, all-purpose seasoning, garlic granules, onion granules and cook until aromatic around 60-90 seconds.`,
+Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside.garlic granules, onion granules and cook until aromatic around 60-90 seconds.`,
     description:
       'Food provides essential nutrients for overall health and well-being',
     category: 'African food',
@@ -247,10 +233,7 @@ Into the pan add smoked paprika, all-purpose seasoning, garlic granules, onion g
     price: 3800,
     how: `Rinse the rice under cold water until the water runs clear, then set aside to drain.
 Blend the fresh tomatoes, red bell peppers, scotch bonnet pepper, half the onion,ginger and garlic cloves until smooth. Set aside.
-Heat the oil in a large, deep skillet or pot over medium heat.
-Add the remaining chopped onion and cook until softened.
-Once softened, add your tomato paste and cook this for roughly 5 minutes or until the tomato paste carmalises, you should see black parts on your pan this is where spme of the smoky flavour will come from.
-Into the pan add smoked paprika, all-purpose seasoning, garlic granules, onion granules and cook until aromatic around 60-90 seconds.`,
+Heat the oil in a large.`,
     description:
       'Food provides essential nutrients for overall health and well-being',
     category: 'Local food',

@@ -13,9 +13,9 @@ const Product = () => {
   useEffect(() => {
     const selectedProduct = food_list.find((item) => item._id === Number(id));
     if (selectedProduct) {
-      setProduct(selectedProduct);
+      setProduct(selectedProduct)
     }
-  }, [food_list, id]);
+  }, [food_list, id])
 
   return (
     <div className="product-details">
@@ -31,13 +31,11 @@ const Product = () => {
         <p>Price: ${product?.price}</p>
         <h3>Description</h3>
         <p>{product?.how}</p>
-        {cartItem[id] && (
           <div className="food-item-counter">
             <FaMinus onClick={() => removeFromCart(id)} />
             <p>{cartItem[id]}</p>
             <FaPlus onClick={() => addToCart(id)} />
           </div>
-        )}
       </div>
     </div>
   );

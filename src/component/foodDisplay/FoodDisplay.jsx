@@ -2,8 +2,15 @@ import React, { useState, useContext } from 'react';
 import './FoodDisplay.css';
 import { StoreContext } from '../../context/StoreContext';
 import FoodItem from '../foodItem/FoodItem';
+import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 
-const FoodDisplay = ({ category, onProductClick }) => {
+const FoodDisplay = ({
+  category,
+  onProductClick,
+  currentPage,
+  setCurrentPage,
+  itemsPerPage,
+}) => {
   const { food_list } = useContext(StoreContext);
 
   const [searchResults, setSearchResults] = useState([]);
@@ -20,7 +27,19 @@ const FoodDisplay = ({ category, onProductClick }) => {
     }
   };
 
-  const displayedItems = searchResults.length > 0 ? searchResults : food_list;
+  const filteredItems =
+    searchResults.length > 0
+      ? searchResults
+      : food_list.filter(
+          (item) => category === 'All' || category === item.category
+        );
+
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedItems = filteredItems.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
   return (
     <div className="food-display" id="food-display">
@@ -39,26 +58,47 @@ const FoodDisplay = ({ category, onProductClick }) => {
         </div>
       </div>
       <div className="food-display-list">
-        {displayedItems.map((item, index) => {
-          if (category === 'All' || category === item.category) {
-            return (
-              <div
-                key={`${item._id}-${index}`}
-                onClick={() => onProductClick(item._id)}
-                className="food-item"
-              >
-                <FoodItem
-                  id={item._id}
-                  name={item.name}
-                  price={item.price}
-                  description={item.description}
-                  image={item.image}
-                />
-              </div>
-            );
-          }
-          return null;
-        })}
+        {paginatedItems.map((item) => (
+          <div
+            key={item.id}
+            onClick={() => onProductClick(item._id)}
+            className="food-item"
+          >
+            <FoodItem
+              id={item._id}
+              name={item.name}
+              price={item.price}
+              description={item.description}
+              image={item.image}
+            />
+          </div>
+        ))}
+      </div>
+      <div className="pagination">
+        <button
+          className="arrowIcon"
+          onClick={() => setCurrentPage(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          <IoIosArrowBack />
+        </button>
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index + 1}
+            id="numBtn"
+            onClick={() => setCurrentPage(index + 1)}
+            className={currentPage === index + 1 ? 'active' : ''}
+          >
+            {index + 1}
+          </button>
+        ))}
+        <button
+          className="arrowIcon"
+          onClick={() => setCurrentPage(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
+          <IoIosArrowForward />
+        </button>
       </div>
     </div>
   );
