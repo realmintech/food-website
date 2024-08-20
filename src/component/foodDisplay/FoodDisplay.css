@@ -68,7 +68,6 @@ gap: 16px;
   margin: 20px auto;
 }
 
-
 @media (max-width: 1024px) {
   .food-display-list {
 display:grid;

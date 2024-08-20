@@ -80,9 +80,8 @@ const Gallery = () => {
             <div key={index} className='cover'>
                 <div className="gallery-image-container">
                   <img src={item.image} alt={item.name} className="gallery-image" />
+                  <p>{item.category}</p>
                 </div>
-                <p>{item.name}</p>
-                <p className='category'>{item.category}</p>
             </div>
         ))}
     </div>
