@@ -9,7 +9,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
           <span>
-            <FaBowlFood />RealM
+            <FaBowlFood />
+            RealM
           </span>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
@@ -27,6 +28,15 @@ const Footer = () => {
             <li className="list">About</li>
             <li className="list">Delivery</li>
             <li className="list">Privacy policy</li>
+          </ul>
+        </div>
+        <div className="footer-center-content">
+          <h2 className="peak">SPONSOR</h2>
+          <ul>
+            <li className="list">UNICEF</li>
+            <li className="list">FAO</li>
+            <li className="list">IITA</li>
+            <li className="list">SON</li>
           </ul>
         </div>
         <div className="footer-right-content">
